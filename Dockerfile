@@ -6,6 +6,7 @@ FROM ${PHP_IMAGE} as php
 
 RUN apt-get update && apt-get install -y \
     git \
+    vim \
     && rm -rf /var/lib/apt/lists/*
 
 COPY --from=composer /usr/bin/composer /usr/local/bin
