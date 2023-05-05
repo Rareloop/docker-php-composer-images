@@ -7,6 +7,8 @@ FROM ${PHP_IMAGE} as php
 RUN apt-get update && apt-get install -y \
     git \
     vim \
+    unzip \
+    p7zip-full \
     && rm -rf /var/lib/apt/lists/*
 
 COPY --from=composer /usr/bin/composer /usr/local/bin
