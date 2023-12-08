@@ -5,7 +5,7 @@ on:
     branches:
       - "main"
   schedule:
-      - cron:  '0 0 * * *'
+    - cron: "0 0 * * *"
 
 jobs:
   build:
@@ -13,6 +13,7 @@ jobs:
     strategy:
       matrix:
         php-image:
+          - 7.0-cli
           - 7.1-cli
           - 7.2-cli
           - 7.3-cli
