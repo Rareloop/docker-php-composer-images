@@ -13,7 +13,6 @@ jobs:
     strategy:
       matrix:
         php-image:
-          - 7.0-cli
           - 7.1-cli
           - 7.2-cli
           - 7.3-cli
@@ -21,6 +20,7 @@ jobs:
           - 8.0-cli
           - 8.1-cli
           - 8.2-cli
+          - 8.3-cli
         composer-image:
           - 1
           - 2
